@@ -7,8 +7,7 @@ if (!('Promise' in self)) polyfillsNeeded.push('/js/polyfills/promise.js');
 
 try {
   new URL('b', 'http://a');
-}
-catch (e) {
+} catch (e) {
   polyfillsNeeded.push('/js/polyfills/url.js');
 }
 
